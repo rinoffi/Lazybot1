@@ -50,23 +50,23 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', 'https://t.me/getmediachatbot')
+reqst_channel = environ.get('REQST_CHANNEL_ID', 'https://t.me/movie_series_tamil_req')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 
 # ─── MongoDB ─────────────────────────────────────────────
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://haribotx:haribotx@cluster0.i3skil4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telefilter')
 
 
 # ─── Shortlink & Other Settings ─────────────────────────
-VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'adlinkfly.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'af77f68713ff5ec1e9e7ahsuskaqkcc29e85ceb855a')
+VERIFY = bool(environ.get('VERIFY', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://gplinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '99b81ac9880b318b51a2a291c2fc68d4e719ccf6')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
@@ -74,18 +74,18 @@ MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled(environ.get('MAX_BTN', "True"), True)
 PORT = environ.get("PORT", "8080")
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ur_movie_group')
-SPRT_CHNL = environ.get('SPRT_CHNL', 'https://t.me/kissuxbots')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/kissuxbots')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/bot_making_tips')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_series_tamil_req')
+SPRT_CHNL = environ.get('SPRT_CHNL', 'https://t.me/+Jo13VAOePDQ4NzJl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/zoro_filess')
+TUTORIAL = environ.get('TUTORIAL', '')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/kissuxbots')
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 𓆩•𝐊𝐢𝐬𝐬𝐮💞•𓆪')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/c/2887094034/3')
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 'Thizz_zoro')
 
 
 # ─── Display Configurations ─────────────────────────────
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ""))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kissuhelp')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002853893090"))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1002097835623')
 
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), False)
@@ -96,7 +96,7 @@ SINGLE_BUTTON = is_enabled(environ.get('SINGLE_BUTTON', "True"), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
-REQ_GRP = environ.get('REQ_GRP', 'https://t.me/ur_movie_group')
+REQ_GRP = environ.get('REQ_GRP', 'https://t.me/movie_series_tamil_req')
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
