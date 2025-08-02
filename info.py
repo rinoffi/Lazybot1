@@ -17,9 +17,9 @@ def is_enabled(value, default):
 
 # ─── Bot Info ───────────────────────────────────────────
 SESSION = environ.get('SESSION', 'Tele_Filter')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '24160099'))
+API_HASH = environ.get('API_HASH', '381515f2540b0bf817a68af8b352f5b7')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7542357714:AAGeN6h0tjwlwkLv15Vo61jBtsTQJKj4hOU")
 
 
 # ─── Bot Settings ───────────────────────────────────────
@@ -28,14 +28,14 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = environ.get(
     'PICS',
-    'https://envs.sh/R3g.jpg https://envs.sh/R3H.jpg https://envs.sh/R3N.jpg https://envs.sh/R3v.jpg https://envs.sh/R39.jpg'
+    'https://files.catbox.moe/pamuxq.jpg https://files.catbox.moe/8aqbv9.jpg https://files.catbox.moe/t09o37.jpg https://files.catbox.moe/8eb8s6.jpg 'https://files.catbox.moe/ufsz0x.jpg
 ).split()
 
-NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/R3g.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://envs.sh/R3g.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/7b0ba2952ec098bb46997.jpg")
-VRFIED_IMG = environ.get("VRFIED_IMG", "https://envs.sh/R3g.jpg")
-VRFY_IMG = environ.get("VRFY_IMG", "https://envs.sh/R3N.jpg")
+NOR_IMG = environ.get("NOR_IMG", "https://files.catbox.moe/clje6o.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://video-link-generator.replit.app/v/hw39qldp5rs46brwbdiwx5")
+SPELL_IMG = environ.get("SPELL_IMG", "https://files.catbox.moe/1v49ku.jpg")
+VRFIED_IMG = environ.get("VRFIED_IMG", "https://files.catbox.moe/negl9v.jpg")
+VRFY_IMG = environ.get("VRFY_IMG", "https://files.catbox.moe/m4t445.jpg")
 
 
 # ─── Admins / Users / Channels ──────────────────────────
