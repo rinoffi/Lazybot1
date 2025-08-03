@@ -16,7 +16,7 @@ def is_enabled(value, default):
 
 
 # ─── Bot Info ───────────────────────────────────────────
-SESSION = environ.get('SESSION', 'Tele_Filter')
+SESSION = environ.get('SESSION', 'Session')
 API_ID = int(environ.get('API_ID', '24160099'))
 API_HASH = environ.get('API_HASH', '381515f2540b0bf817a68af8b352f5b7')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7542357714:AAGeN6h0tjwlwkLv15Vo61jBtsTQJKj4hOU")
@@ -28,8 +28,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = environ.get(
     'PICS',
-    'https://files.catbox.moe/pamuxq.jpg https://files.catbox.moe/8aqbv9.jpg https://files.catbox.moe/t09o37.jpg https://files.catbox.moe/8eb8s6.jpg 'https://files.catbox.moe/ufsz0x.jpg
-).split()
+    'https://files.catbox.moe/pamuxq.jpg https://files.catbox.moe/8aqbv9.jpg https://files.catbox.moe/t09o37.jpg https://files.catbox.moe/8eb8s6.jpg 'https://files.catbox.moe/ufsz0x.jpg).split()
 
 NOR_IMG = environ.get("NOR_IMG", "https://files.catbox.moe/clje6o.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://video-link-generator.replit.app/v/hw39qldp5rs46brwbdiwx5")
@@ -45,8 +44,8 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 
-auth_channel = environ.get('AUTH_CHANNEL')
-auth_grp = environ.get('AUTH_GROUP')
+auth_channel = environ.get('-1002883076778')
+auth_grp = environ.get('-1002840072156')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
