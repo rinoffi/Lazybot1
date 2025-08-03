@@ -83,7 +83,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 'Thizz_zor
 
 
 # ─── Display Configurations ─────────────────────────────
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002853893090"))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002657227914"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1002097835623')
 
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
