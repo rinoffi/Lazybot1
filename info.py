@@ -17,9 +17,9 @@ def is_enabled(value, default):
 
 # ─── Bot Info ───────────────────────────────────────────
 SESSION = environ.get('SESSION', 'Tele_Filter')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '24160099'))
+API_HASH = environ.get('API_HASH', '381515f2540b0bf817a68af8b352f5b7')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7542357714:AAGeN6h0tjwlwkLv15Vo61jBtsTQJKj4hOU")
 
 
 # ─── Bot Settings ───────────────────────────────────────
@@ -58,7 +58,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 
 # ─── MongoDB ─────────────────────────────────────────────
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://haribotx:haribotx@cluster0.i3skil4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telefilter')
 
@@ -80,11 +80,11 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/kissuxbots')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/bot_making_tips')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/kissuxbots')
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 𓆩•𝐊𝐢𝐬𝐬𝐮💞•𓆪')
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Thizz_zoro')
 
 
 # ─── Display Configurations ─────────────────────────────
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ""))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002853893090"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kissuhelp')
 
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
